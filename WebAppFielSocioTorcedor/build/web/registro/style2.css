@@ -1,0 +1,166 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 de out. de 2024, 15:52:32
+    Author     : eddie
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000000a6;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.568);
+    height: 100px;
+}
+
+.nav-list li {
+    padding: 20px;
+    display: inline;
+}
+
+.nav-list a {
+    display: block;
+    position: relative;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: black -2px 2px 3px;
+    margin-right: 80px;
+    margin-top: -100px;
+}
+
+.homebtn{
+    width: 90px;
+    margin-bottom: 0px;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form-container {
+    display: block;
+    position: relative;
+    margin: auto;
+    background-color: rgb(39, 38, 38);
+    padding-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 435px;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    height: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+button {
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    color: #000000;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-top: 50px;
+    height: auto;
+}
+
+.footer-p{
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 100px;
+}
+
+.footer-img{
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
