@@ -2,7 +2,7 @@ package util;
 
 import java.sql.*; 
 
-public class ConectaDB {
+public class ConectaDbSocio {
     //Atrib.
     // N/A.
     

@@ -1,7 +1,7 @@
 package model.dao;
 
 import model.Socio;
-import util.ConectaDB;
+import util.ConectaDbSocio;
 import java.sql.*;
 
 public class SocioDAO {
@@ -12,7 +12,7 @@ public class SocioDAO {
     public boolean insSocio(Socio p_socio) throws ClassNotFoundException{
         Connection conexao = null;
         try{
-            conexao = ConectaDB.conectar();
+            conexao = ConectaDbSocio.conectar();
             Statement stmt = conexao.createStatement();         
             String sql = "Insert INTO socio(Nome, Data_nasc, Cpf, Telefone, Email, Senha, Plano) VALUES ('" + p_socio.getNome() +"', '" + p_socio.getData_nasc() +"', '" + p_socio.getCpf() + "','" + p_socio.getTelefone() + "','" + p_socio.getEmail() + "','" + p_socio.getSenha() + "','" + p_socio.getPlano() + "')";
             stmt.executeUpdate(sql);
