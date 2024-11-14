@@ -5,8 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="model.Pesquisa"%>
-<%@page import="model.dao.PesquisaDAO"%>
+<%@page import="model.PesquisaSatisfacao"%>
+<%@page import="model.dao.PesquisaSatisfacaoDAO"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 
@@ -21,9 +21,9 @@
         
             //Select "Lista"
 
-            PesquisaDAO pesqDAO = new PesquisaDAO();
+            PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
             
-            List<Pesquisa> lista = new ArrayList<>();
+            List<PesquisaSatisfacao> lista = new ArrayList<>();
             lista = pesqDAO.consPesqLista();
             
             int n_reg = 0 ;
@@ -32,7 +32,7 @@
             
             for( int i = 0; i <= lista.size()-1; i++){            
                 out.println("<br><br> #: " + i);                
-                out.println("<br> Data: " + lista.get(i).getDt_pesq());
+                out.println("<br> Data: " + lista.get(i).getDt());
                 out.println("<br> <b>Nome:</b> " + lista.get(i).getNome());
                 out.println("<br> E-mail: " + lista.get(i).getEmail());
                 out.println("<br> Questão 1: " + lista.get(i).getQ1());

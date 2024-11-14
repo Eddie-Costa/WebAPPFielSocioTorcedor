@@ -5,8 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="model.Pesquisa"%>
-<%@page import="model.dao.PesquisaDAO"%>
+<%@page import="model.PesquisaSatisfacao"%>
+<%@page import="model.dao.PesquisaSatisfacaoDAO"%>
 <%@page import="java.util.*"%>
 <%@page import="java.text.*"%>
 
@@ -28,7 +28,7 @@
             int r4 = Integer.parseInt( request.getParameter("r4") ); 
 
             // Instância do objeto e atrib. de dados
-            Pesquisa pesq = new Pesquisa();
+            PesquisaSatisfacao pesq = new PesquisaSatisfacao();
             pesq.setNome(nome);
             pesq.setEmail(email);
             pesq.setQ1(r1);
@@ -36,9 +36,9 @@
             pesq.setQ3(r3);
             pesq.setQ4(r4);            
 
-            pesq.setDt_pesq(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())); //Data atual , de Date para String
+            pesq.setDt(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())); //Data atual , de Date para String
             
-            PesquisaDAO pesqDAO = new PesquisaDAO();
+            PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
             
             if (pesqDAO.insPesq(pesq)){    // Insere e retorna o resultado (true / false).
                 //Acesso Permitido

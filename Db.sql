@@ -14,10 +14,10 @@ Create table Socio(
 );
 
 Create table Pesquisa(
-	Id int Primary Key auto_increment not null,
-    Nome varchar(50) not null,
+	Protocolo int Primary Key auto_increment not null,
+    Nome varchar(50),
     Email varchar(60) not null,
-	Dt_pesq date not null,
+	Dt date not null,
 	q1 int not null,
     q2 int not null,
     q3 int not null,

@@ -5,8 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="model.Pesquisa"%>
-<%@page import="model.dao.PesquisaDAO"%>
+<%@page import="model.PesquisaSatisfacao"%>
+<%@page import="model.dao.PesquisaSatisfacaoDAO"%>
 
 <!DOCTYPE html>
 <html>
@@ -20,14 +20,14 @@
         String email = request.getParameter("email");
             
         // Instância e atrib de valor
-        Pesquisa pesq = new Pesquisa();
+        PesquisaSatisfacao pesq = new PesquisaSatisfacao();
         pesq.setEmail(email);
         
          //Select
-        PesquisaDAO pesqDAO = new PesquisaDAO();
-        if(pesqDAO.consPesqRegId(pesq) != null){
+        PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
+        if(pesqDAO.consPesqEmail(pesq) != null){
                 out.println("<br> <b>Pesquisa de Satisfação</b> <br>");
-                out.println("<br> Data: " + pesq.getDt_pesq());
+                out.println("<br> Data: " + pesq.getDt());
                 out.println("<br> Nome: " + pesq.getNome());
                 out.println("<br> E-mail: " + pesq.getEmail());
                 out.println("<br> Questão 1: " + pesq.getQ1());
