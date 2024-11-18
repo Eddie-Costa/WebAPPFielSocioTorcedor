@@ -1,9 +1,3 @@
-<%-- 
-    Document   : registrar
-    Created on : 4 de out. de 2024, 15:25:35
-    Author     : eddie
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="model.Socio"%>
 <%@page import="model.dao.SocioDAO"%>

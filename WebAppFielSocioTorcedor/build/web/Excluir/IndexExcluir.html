@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Registro</title>
-    <link rel="stylesheet" href="EstiloConsulta.css">
+    <link rel="stylesheet" href="EstiloExcluir.css">
 </head>
 <body>
     <header>
@@ -25,15 +25,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </nav>
     </header>
     <main>
-        <div class="form-container">
-            <h1>Pesquisa de Satisfação - Consulta (Registro)</h1>       
-            <form name="frmPesq" method="post" action="consultaReg.jsp">
-            <p>Digite o Nome: </p>
-            <input type="text" name="nome">    
-            <input type="submit" value="Consultar">
-        </form>
-        </div>
-        
+        <h1>Exclusão (Protocolo)</h1>       
+        <form name="frmPesq" method="post" action="excluir.jsp">
+            <p>Digite o Protocolo:</p>
+            <input type="text" name="protocolo">                            
+            <input type="submit" value="Apagar">
+        </form> 
     </main>
 </body>
 </html>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : consultaLista
-    Created on : 30 de out. de 2024, 21:45:24
-    Author     : alunocmc
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="model.PesquisaSatisfacao"%>
 <%@page import="model.dao.PesquisaSatisfacaoDAO"%>

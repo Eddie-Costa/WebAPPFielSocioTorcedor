@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Registro</title>
-    <link rel="stylesheet" href="EstiloConsulta.css">
+    <link rel="stylesheet" href="EstiloAlterar.css">
 </head>
 <body>
     <header>
@@ -25,15 +25,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </nav>
     </header>
     <main>
-        <div class="form-container">
-            <h1>Pesquisa de Satisfação - Consulta (Registro)</h1>       
-            <form name="frmPesq" method="post" action="consultaReg.jsp">
-            <p>Digite o Nome: </p>
-            <input type="text" name="nome">    
+        <h1>Pesquisa de Satisfação - Alteração (Consulta)</h1>       
+        <form name="frmPesq" method="post" action="consultaAltReg.jsp">
+            Email: <input type="text" name="email"> <p>                            
             <input type="submit" value="Consultar">
-        </form>
-        </div>
-        
+        </form> 
     </main>
 </body>
 </html>

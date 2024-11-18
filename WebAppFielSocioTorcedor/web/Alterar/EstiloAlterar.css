@@ -72,19 +72,18 @@ nav {
 .form-container {
     display: block;
     position: relative;
-    text-align: center;
-    justify-content: center;
     margin: auto;
     background-color: rgb(39, 38, 38);
     padding-bottom: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 435px;
     height: auto;
     margin-top: 50px;
-}   
+    text-align: center;
+}
 
-h1 {
+h2 {
     display: block;
     position: relative;
     margin: auto;
@@ -93,82 +92,83 @@ h1 {
     margin-bottom: 40px;
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     top: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-p {
-    padding-top: 10px;
+label {
     display: block;
     position: relative;
     margin: auto;
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 5px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
-.input_text {
+input {
     display: block;
     position: relative;
     margin: auto;
-    text-align: center;
-    align-items: center;
-    width: 400px;
+    text-align: left;
+    width: 80%;
     height: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
-.input_btn{
+button {
     display: block;
     position: relative;
     margin: auto;
     text-align: center;
-    width: 80px;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    padding: 10px;
+    width: 80%;
+    color: #000000;
     margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.p_campos{
+button:hover {
+    background-color: #b30000;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-top: 50px;
+    height: auto;
+}
+
+.footer-p{
+    display: block;
+    position: relative;
     color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 100px;
 }
 
-.h1-campos {
-    color: white;
-}
-
-table {
-    display: flex;
-    justify-content: center;
+.footer-img{
+    display: block;
     position: relative;
     margin: auto;
     text-align: center;
-    align-items: center;
-    right: 10px;
-}
-
-.escala {
-    width: 300px;
-}
-
-.td_radius{
-    padding-left: 20px;
-}
-
-.td_radius input{
-    height: 30px;
-    width: 30px;
+    width: 600px;
 }

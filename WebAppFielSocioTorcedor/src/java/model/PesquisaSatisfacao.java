@@ -5,10 +5,7 @@
 package model;
 
 import java.util.Date;
-/**
- *
- * @author alunocmc
- */
+
 public class PesquisaSatisfacao {
     // Atrib
     private int protocolo;
