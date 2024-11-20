@@ -8,8 +8,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="EstiloConsulta2.css">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="EstiloConsultaTabela.css">
     </head>
     <body>
         <header>
@@ -26,10 +26,9 @@
                 </ul>
             </nav>
         </header>
-        <%                  
-        
+        <main>
+            <%        
             //Select "Lista"
-
             PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
             
             List<PesquisaSatisfacao> lista = new ArrayList<>();
@@ -37,21 +36,43 @@
             
             int n_reg = 0 ;
             out.println("<br> <b>Pesquisa de Satisfação - Registros</b>");
-            
-            for( int i = 0; i <= lista.size()-1; i++){            
-                out.println("<br><br> #: " + i);                
-                out.println("<br> Data: " + lista.get(i).getDt());
-                out.println("<br> <b>Nome:</b> " + lista.get(i).getNome());
-                out.println("<br> E-mail: " + lista.get(i).getEmail());
-                out.println("<br> Questão 1: " + lista.get(i).getQ1());
-                out.println("<br> Questão 2: " + lista.get(i).getQ2());
-                out.println("<br> Questão 3: " + lista.get(i).getQ3());
-                out.println("<br> Questão 4: " + lista.get(i).getQ4());                            
-                n_reg++;                           
-            }
-            out.println("<br><br> <b>Registros: </b>" + n_reg + "<br>");
+            %>
 
-        
-        %>
+            <!-- HTML -->
+            <table border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>Protocolo</th>
+                        <th>Data</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Resp. 1</th>
+                        <th>Resp. 2</th>
+                        <th>Resp. 3</th>
+                        <th>Resp. 4</th>
+                    </tr>            
+            <%
+               for( int i = 0; i <= lista.size()-1; i++){  
+            %>                                                        
+                    <tr>
+                        <td><%= i+1%></td>
+                        <td><%= lista.get(i).getProtocolo() %></td>
+                        <td><%= lista.get(i).getDt()%></td>
+                        <td><%= lista.get(i).getNome()%></td>
+                        <td><%= lista.get(i).getEmail()%></td>
+                        <td><%= lista.get(i).getQ1()%></td>
+                        <td><%= lista.get(i).getQ2()%></td>
+                        <td><%= lista.get(i).getQ3()%></td>
+                        <td><%= lista.get(i).getQ4()%></td>
+                    </tr>                
+            <%
+                   n_reg++;                           
+               }
+            %>
+             </table>
+            <%
+                out.println("<br><br> <b>Registros: </b>" + n_reg + "<br>");      
+            %>
+        </main>
     </body>
 </html>

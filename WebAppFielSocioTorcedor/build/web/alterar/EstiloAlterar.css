@@ -83,7 +83,7 @@ nav {
     text-align: center;
 }
 
-h2 {
+h1 {
     display: block;
     position: relative;
     margin: auto;
@@ -98,7 +98,7 @@ h2 {
     font-weight: 500;
 }
 
-label {
+p {
     display: block;
     position: relative;
     margin: auto;
@@ -148,27 +148,16 @@ button:hover {
     background-color: #b30000;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.397);
-    margin-top: 50px;
-    height: auto;
+.form-main{
+    margin-top: 100px;
 }
 
-.footer-p{
-    display: block;
-    position: relative;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 100px;
+.input-txt{
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
-.footer-img{
-    display: block;
-    position: relative;
-    margin: auto;
+.input-btn{
     text-align: center;
-    width: 600px;
+    margin-left: 20px
 }

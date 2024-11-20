@@ -1,9 +1,3 @@
-<%-- 
-    Document   : pesquisa
-    Created on : 30 de out. de 2024, 19:42:37
-    Author     : alunocmc
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="model.PesquisaSatisfacao"%>
 <%@page import="model.dao.PesquisaSatisfacaoDAO"%>
@@ -14,9 +8,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="EstiloAlterar2.css">
         <title>Alterar (Consulta)</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../assets/2000.png" alt="" class="homebtn"/></a>
+                <ul class="nav-list">
+                    <li><a href="../Autenticação/IndexRegistro.html">Registrar</a></li>
+                    <li><a href="../PesquisaSatisfacao/IndexPesquisa.html">Pesquisa</a></li>
+                    <li><a href="../consulta/IndexConsulta.html">Consultar(Nome)</a></li>
+                    <li><a href="../consultaId/IndexConsultaId.html">Consultar(Email)</a></li>
+                    <li><a href="../ConsultaTabela/ConsultaTab.jsp">Consultar(Tabela)</a></li>
+                    <li><a href="../Excluir/IndexExcluir.html">Excluir</a></li>
+                    <li><a href="../alterar/IndexAlterar.html">Alterar</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1>Pesquisa - Alteração</h1>
         <%
             //Entrada

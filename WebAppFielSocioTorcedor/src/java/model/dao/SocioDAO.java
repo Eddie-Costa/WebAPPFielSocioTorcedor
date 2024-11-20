@@ -14,7 +14,7 @@ public class SocioDAO {
         try{
             conexao = ConectaDbSocio.conectar();
             Statement stmt = conexao.createStatement();         
-            String sql = "Insert INTO socio(Nome, Data_nasc, Cpf, Telefone, Email, Senha, Plano) VALUES ('" + p_socio.getNome() +"', '" + p_socio.getData_nasc() +"', '" + p_socio.getCpf() + "','" + p_socio.getTelefone() + "','" + p_socio.getEmail() + "','" + p_socio.getSenha() + "','" + p_socio.getPlano() + "')";
+            String sql = "Insert into Socio(Nome, Data_nasc, Cpf, Telefone, Email, Senha, Plano) VALUES ('" + p_socio.getNome() +"', '" + p_socio.getData_nasc() +"', '" + p_socio.getCpf() + "','" + p_socio.getTelefone() + "','" + p_socio.getEmail() + "','" + p_socio.getSenha() + "','" + p_socio.getPlano() + "')";
             stmt.executeUpdate(sql);
             return true;
         }catch(SQLException ex){

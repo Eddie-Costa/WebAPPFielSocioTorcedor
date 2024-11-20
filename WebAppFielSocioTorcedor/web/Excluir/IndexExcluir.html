@@ -17,20 +17,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <ul class="nav-list">
                 <li><a href="../Autenticação/IndexRegistro.html">Registrar</a></li>
                 <li><a href="../PesquisaSatisfacao/IndexPesquisa.html">Pesquisa</a></li>
-                <li><a href="../consulta/IndexConsulta.html">Consultar</a></li>
-                <li><a href="../consultaId/IndexConsultaId.html">ConsultarID</a></li>
+                <li><a href="../consulta/IndexConsulta.html">Consultar(Nome)</a></li>
+                <li><a href="../consultaId/IndexConsultaId.html">Consultar(Email)</a></li>
+                <li><a href="../ConsultaTabela/ConsultaTab.jsp">Consultar(Tabela)</a></li>
                 <li><a href="../Excluir/IndexExcluir.html">Excluir</a></li>
                 <li><a href="../alterar/IndexAlterar.html">Alterar</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Exclusão (Protocolo)</h1>       
-        <form name="frmPesq" method="post" action="excluir.jsp">
-            <p>Digite o Protocolo:</p>
-            <input type="text" name="protocolo">                            
-            <input type="submit" value="Apagar">
-        </form> 
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Exclusão (Protocolo)</h1>
+            </div>
+            <div class="form-main">
+                <form name="frmPesq" method="post" action="excluir.jsp">
+                    <p>Digite o Protocolo:</p>
+                    <input type="text" name="protocolo" class="input-txt">                            
+                    <input type="submit" value="Apagar" class="input-btn">
+                </form>     
+            </div>       
+        </div> 
     </main>
 </body>
 </html>

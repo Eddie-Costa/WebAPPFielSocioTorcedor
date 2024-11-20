@@ -113,20 +113,20 @@ public class PesquisaSatisfacaoDAO {
              conexao = ConectaDbSocio.conectar(); // Abre a conexão
              Statement stmt = conexao.createStatement();                                   
 
-             String sql = "SELECT * from pesquisa";
+             String sql = "SELECT * from Pesquisa";
              ResultSet rs = stmt.executeQuery(sql); //GO - Executar - Select
 
              int n_reg = 0;
              while (rs.next()) {                 
                  PesquisaSatisfacao pesquisa = new PesquisaSatisfacao();
-                 pesquisa.setProtocolo(Integer.parseInt(rs.getString("pkid")));  
+                 pesquisa.setProtocolo(Integer.parseInt(rs.getString("protocolo")));  
                  pesquisa.setNome(rs.getString("nome"));  
                  pesquisa.setEmail(rs.getString("email"));                
                  pesquisa.setQ1( Integer.parseInt(rs.getString("q1")));                
                  pesquisa.setQ2( Integer.parseInt(rs.getString("q2")));                
                  pesquisa.setQ3( Integer.parseInt(rs.getString("q3")));                
                  pesquisa.setQ4( Integer.parseInt(rs.getString("q4"))); 
-                 pesquisa.setDt(rs.getString("dt_pesq")); 
+                 pesquisa.setDt(rs.getString("dt")); 
                  lista.add(pesquisa);
                  n_reg++;
              }

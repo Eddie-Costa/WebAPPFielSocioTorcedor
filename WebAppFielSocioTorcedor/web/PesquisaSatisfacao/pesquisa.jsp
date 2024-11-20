@@ -8,10 +8,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="EstiloPesquisa2.css">
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Pesquisa</h1>
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../assets/2000.png" alt="" class="homebtn"/></a>
+                <ul class="nav-list">
+                    <li><a href="../Autenticação/IndexRegistro.html">Registrar</a></li>
+                    <li><a href="../PesquisaSatisfacao/IndexPesquisa.html">Pesquisa</a></li>
+                    <li><a href="../consulta/IndexConsulta.html">Consultar(Nome)</a></li>
+                    <li><a href="../consultaId/IndexConsultaId.html">Consultar(Email)</a></li>
+                    <li><a href="../ConsultaTabela/ConsultaTab.jsp">Consultar(Tabela)</a></li>
+                    <li><a href="../Excluir/IndexExcluir.html">Excluir</a></li>
+                    <li><a href="../alterar/IndexAlterar.html">Alterar</a></li>
+                </ul>
+            </nav>
+        </header>
         <%
             //Entrada
             String nome = request.getParameter("nome");            

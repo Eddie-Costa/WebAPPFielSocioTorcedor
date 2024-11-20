@@ -11,7 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../assets/bg.png);
+    background-image: url(../assets/bgbranco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -155,8 +155,4 @@ button:hover {
 .input-txt{
     margin-top: 10px;
     margin-bottom: 60px;
-}
-
-.input-btn{
-    text-align: center;
 }

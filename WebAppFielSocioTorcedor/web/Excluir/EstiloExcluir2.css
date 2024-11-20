@@ -11,7 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../assets/bg.png);
+    background-image: url(../assets/bgbranco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -83,7 +83,7 @@ nav {
     text-align: center;
 }
 
-h1 {
+h2 {
     display: block;
     position: relative;
     margin: auto;
@@ -98,7 +98,7 @@ h1 {
     font-weight: 500;
 }
 
-p {
+label {
     display: block;
     position: relative;
     margin: auto;
@@ -148,15 +148,27 @@ button:hover {
     background-color: #b30000;
 }
 
-.form-main{
-    margin-top: 100px;
+footer{
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-top: 50px;
+    height: auto;
 }
 
-.input-txt{
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-.input-btn{
+.footer-p{
+    display: block;
+    position: relative;
+    color: white;
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 100px;
+}
+
+.footer-img{
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 600px;
 }

@@ -17,8 +17,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <ul class="nav-list">
                 <li><a href="../Autenticação/IndexRegistro.html">Registrar</a></li>
                 <li><a href="../PesquisaSatisfacao/IndexPesquisa.html">Pesquisa</a></li>
-                <li><a href="../consulta/IndexConsulta.html">Consultar</a></li>
-                <li><a href="../consultaId/IndexConsultaId.html">ConsultarID</a></li>
+                <li><a href="../consulta/IndexConsulta.html">Consultar(Nome)</a></li>
+                <li><a href="../consultaId/IndexConsultaId.html">Consultar(Email)</a></li>
+                <li><a href="../ConsultaTabela/ConsultaTab.jsp">Consultar(Tabela)</a></li>
                 <li><a href="../Excluir/IndexExcluir.html">Excluir</a></li>
                 <li><a href="../alterar/IndexAlterar.html">Alterar</a></li>
             </ul>
@@ -26,14 +27,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </header>
     <main>
         <div class="form-container">
-            <h1>Pesquisa de Satisfação - Consulta (Registro)</h1>       
-            <form name="frmPesq" method="post" action="consultaReg.jsp">
-            <p>Digite o Nome: </p>
-            <input type="text" name="nome">    
-            <input type="submit" value="Consultar">
-        </form>
+            <div class="form-header">
+                <h1>Consulta (Nome)</h1>
+            </div>
+            <div class="form-main">
+                <form name="frmPesq" method="post" action="consultaReg.jsp">
+                    <p>Digite o Nome: </p>
+                    <input type="text" name="nome" class="input-txt">    
+                    <input type="submit" value="Consultar" class="input-btn">
+                </form>    
+            </div>       
         </div>
-        
     </main>
 </body>
 </html>

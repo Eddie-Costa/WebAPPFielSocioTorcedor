@@ -8,9 +8,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="EstiloConsulta2.css">
         <title>JSP Page</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../assets/2000.png" alt="" class="homebtn"/></a>
+                <ul class="nav-list">
+                    <li><a href="../Autenticação/IndexRegistro.html">Registrar</a></li>
+                    <li><a href="../PesquisaSatisfacao/IndexPesquisa.html">Pesquisa</a></li>
+                    <li><a href="../consulta/IndexConsulta.html">Consultar(Nome)</a></li>
+                    <li><a href="../consultaId/IndexConsultaId.html">Consultar(Email)</a></li>
+                    <li><a href="../ConsultaTabela/ConsultaTab.jsp">Consultar(Tabela)</a></li>
+                    <li><a href="../Excluir/IndexExcluir.html">Excluir</a></li>
+                    <li><a href="../alterar/IndexAlterar.html">Alterar</a></li>
+                </ul>
+            </nav>
+        </header>
         <%                  
         
             //Select "Lista"
@@ -21,7 +36,6 @@
             lista = pesqDAO.consPesqLista();
             
             int n_reg = 0 ;
-            out.println("<br><br> <img src='../imagens/logo.jpg' alt=''/>");
             out.println("<br> <b>Pesquisa de Satisfação - Registros</b>");
             
             for( int i = 0; i <= lista.size()-1; i++){            
@@ -36,7 +50,6 @@
                 n_reg++;                           
             }
             out.println("<br><br> <b>Registros: </b>" + n_reg + "<br>");
-           out.println("<br><br> <b> Legenda:</b> <br> <img src='../imagens/escala.jpg' alt=''/>");
 
         
         %>
