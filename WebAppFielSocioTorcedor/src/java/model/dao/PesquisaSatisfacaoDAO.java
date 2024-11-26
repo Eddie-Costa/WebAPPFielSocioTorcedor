@@ -14,7 +14,7 @@ public class PesquisaSatisfacaoDAO {
          //Connectar
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();        
 
              String sql = "INSERT INTO Pesquisa (Nome, Email, Dt, q1, q2, q3, q4) VALUES ('" + p_pesq.getNome()+
@@ -25,7 +25,7 @@ public class PesquisaSatisfacaoDAO {
                                                                                          "," + p_pesq.getQ3()+ 
                                                                                          "," + p_pesq.getQ4() + ")";
 
-             stmt.executeUpdate(sql); // Executa o SQL: Insert / Delete ou Update
+             stmt.executeUpdate(sql);
 
              conexao.close();
              return true;
@@ -39,11 +39,11 @@ public class PesquisaSatisfacaoDAO {
      //Connectar
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();                                   
 
              String sql = "SELECT * from Pesquisa where Nome = '" + pesquisa.getNome() + "'";
-             ResultSet rs = stmt.executeQuery(sql); //GO - Executar - Select
+             ResultSet rs = stmt.executeQuery(sql);
 
              int n_reg = 0;
              while (rs.next()) {  
@@ -74,7 +74,7 @@ public class PesquisaSatisfacaoDAO {
      //Connectar
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();                                   
 
              String sql = "SELECT * from Pesquisa where Email = '" +pesquisa.getEmail()+ "' ";
@@ -107,14 +107,14 @@ public class PesquisaSatisfacaoDAO {
 
     public List consPesqLista() throws ClassNotFoundException{
      //Connectar
-         List lista = new ArrayList(); // Minha Lista
+         List lista = new ArrayList();
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();                                   
 
              String sql = "SELECT * from Pesquisa";
-             ResultSet rs = stmt.executeQuery(sql); //GO - Executar - Select
+             ResultSet rs = stmt.executeQuery(sql);
 
              int n_reg = 0;
              while (rs.next()) {                 
@@ -147,7 +147,7 @@ public class PesquisaSatisfacaoDAO {
      //Connectar
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();                                   
 
              String sql = "DELETE from Pesquisa where Protocolo = " + pesquisa.getProtocolo();
@@ -165,7 +165,7 @@ public class PesquisaSatisfacaoDAO {
          //Connectar
          Connection conexao = null;
          try{
-             conexao = ConectaDbSocio.conectar(); // Abre a conexão
+             conexao = ConectaDbSocio.conectar();
              Statement stmt = conexao.createStatement();                     
              String sql = "UPDATE pesquisa SET dt='" + p_pesq.getDt()+ "'" +
                                                      ", Nome='" + p_pesq.getNome()+ "'" +
@@ -175,7 +175,7 @@ public class PesquisaSatisfacaoDAO {
                                                      ", q3=" + p_pesq.getQ3()+ 
                                                      ", q4=" + p_pesq.getQ4() + " WHERE Protocolo = " + p_pesq.getProtocolo();
 
-             stmt.executeUpdate(sql); // Executa o SQL: Insert / Delete ou Update
+             stmt.executeUpdate(sql);
 
              conexao.close();
              return true;

@@ -44,15 +44,13 @@
             pesq.setQ3(r3);
             pesq.setQ4(r4);            
 
-            pesq.setDt(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())); //Data atual , de Date para String
+            pesq.setDt(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
             
             PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
             
-            if (pesqDAO.insPesq(pesq)){    // Insere e retorna o resultado (true / false).
-                //Acesso Permitido
+            if (pesqDAO.insPesq(pesq)){
                 out.println("Pesquisa inserida com sucesso!!!");
             }else{
-                //Acesso Negado
                 out.println("Não inserida!!!");
             }          
         %>

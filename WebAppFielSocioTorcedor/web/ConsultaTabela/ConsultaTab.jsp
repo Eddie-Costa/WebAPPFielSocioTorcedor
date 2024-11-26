@@ -28,7 +28,6 @@
         </header>
         <main>
             <%        
-            //Select "Lista"
             PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
             
             List<PesquisaSatisfacao> lista = new ArrayList<>();

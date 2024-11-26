@@ -32,7 +32,7 @@
         PesquisaSatisfacao pesq = new PesquisaSatisfacao();
         pesq.setProtocolo(protocolo);
         
-         //Select
+        
         PesquisaSatisfacaoDAO pesqDAO = new PesquisaSatisfacaoDAO();
         if(pesqDAO.exPesqId(pesq)){
             out.println("<br> <b>Registro excluído com sucesso!</b> <br>");
